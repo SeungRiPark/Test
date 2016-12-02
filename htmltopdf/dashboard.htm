@@ -1,0 +1,1522 @@
+<html lang="ko"><head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="No-Cache">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta id="og_title" content="" property="og:title">
+		<meta id="og_image" content="image/thumbnail.png" property="og:image">
+		<meta id="og_description" content="" property="og:description">
+		<meta id="og_url" content="http://www.s1ps.co.kr/" property="og:url">
+
+		<!-- =============== (START) DEVELOPER :: 서비스별 분기 =============== -->
+		<title> 중소기업 통합PC보안이 가능한 정보유출방지 솔루션 </title>
+		<link href="/images/js/favicon.ico" rel="shortcut icon">
+		<!-- =============== (END) DEVELOPER :: 서비스별 분기 =============== -->
+		
+		<!-- =============== (START) DEVELOPER : 공통 javascript 호출 =============== -->
+		<script src="/jquery/jquery-1.12.1.min.js" type="text/javascript"></script>
+		<script src="/jquery_ui/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+		 
+		<script src="/js/jquery.timepicker.min.js" type="text/javascript"></script>
+		<script src="/js/jquery-filestyle.js" type="text/javascript"></script>
+		<script src="/js/placeholder.js" type="text/javascript"></script>
+		<script src="/js/common_jy.js" type="text/javascript"></script>
+		<script src="/js/common.js" type="text/javascript"></script>
+		<script src="/js/table.js" type="text/javascript"></script>
+		<script src="/js/setbox.js" type="text/javascript"></script>
+		<script src="/js/common/frame/main.js" type="text/javascript"></script>
+		<!-- =============== (END) DEVELOPER : 공통 javascript 호출 =============== -->
+		
+		<!-- =============== (START) DEVELOPER : 공통 css 호출 =============== -->
+		<link href="http://manager.officekeeper.co.kr/jquery_ui/jquery-ui-1.11.4.min.css" rel="stylesheet" type="text/css"> <!-- 외부 라이브러리 -->
+		<link href="http://manager.officekeeper.co.kr/css/jquery.timepicker.css" rel="stylesheet" type="text/css"> <!-- 외부 라이브러리 -->
+		
+		<link href="http://manager.officekeeper.co.kr/css/reset.css" rel="stylesheet" type="text/css"> <!-- 공통 -->
+		<link href="http://manager.officekeeper.co.kr/css/common.css" rel="stylesheet" type="text/css"> <!-- 공통 -->
+		<link href="http://manager.officekeeper.co.kr/css/layout_frame.css" rel="stylesheet" type="text/css"> <!-- 공통 -->
+		<link href="http://manager.officekeeper.co.kr/css/layout_card.css" rel="stylesheet" type="text/css"> <!-- 공통 -->
+		
+		<link href="http://manager.officekeeper.co.kr/css/ui_common.css" rel="stylesheet" type="text/css"> <!-- UI모듈  -->
+		<link href="http://manager.officekeeper.co.kr/css/ui_form.css" rel="stylesheet" type="text/css"> <!-- UI모듈  -->
+		<link href="http://manager.officekeeper.co.kr/css/ui_button.css" rel="stylesheet" type="text/css"> <!-- UI모듈  -->
+		<link href="http://manager.officekeeper.co.kr/css/ui_table.css" rel="stylesheet" type="text/css"> <!-- UI모듈  -->
+		<link href="http://manager.officekeeper.co.kr/css/ui_tooltip.css" rel="stylesheet" type="text/css"> <!-- UI모듈  -->
+				
+		<link href="http://manager.officekeeper.co.kr/css/custom_top.css" rel="stylesheet" type="text/css"> <!-- 개별 페이지 -->
+		<link href="http://manager.officekeeper.co.kr/css/custom_dashboard.css" rel="stylesheet" type="text/css"> <!-- 개별 페이지 -->
+		<link href="http://manager.officekeeper.co.kr/css/custom_top_org_chart.css" rel="stylesheet" type="text/css"> <!-- 개별 페이지 -->
+		<link href="http://manager.officekeeper.co.kr/css/custom_dlrm_intro.css" rel="stylesheet" type="text/css"> <!-- 개별 페이지 -->
+		<link href="http://manager.officekeeper.co.kr/css/custom_print.css" rel="stylesheet" type="text/css"> <!-- 개별 페이지 -->
+		<link href="http://manager.officekeeper.co.kr/css/custom_month_report.css" rel="stylesheet" type="text/css"> <!-- 개별 페이지 -->
+		
+		<link href="http://manager.officekeeper.co.kr/css/dev_team_add.css" rel="stylesheet" type="text/css"> <!-- 개발팀 수정용   -->
+		<!-- =============== (END) DEVELOPER : 공통 css 호출 =============== -->
+		
+		
+		
+		<!-- =============== (START) DEVELOPER :: 메뉴별 javascript 호출 =============== -->
+						<script src="/highchart/highcharts.js" type="text/javascript"></script>
+				<script src="/js/pc/dashboard.js" type="text/javascript"></script>
+				<script src="/js/highchart.js" type="text/javascript"></script>
+						<!-- =============== (END) DEVELOPER :: 메뉴별 javascript 호출 =============== -->
+		
+		
+		<!-- =============== (START) DEVELOPER :: 메뉴별  css 호출 =============== -->
+						<link href="/css/custom_dashboard.css" rel="stylesheet" type="text/css">
+						<!-- =============== (END) DEVELOPER :: 메뉴별 css 호출 =============== -->
+		
+		
+		<!-- =============== (START) DEVELOPER :: 메뉴별 필요한 변수 =============== -->
+		<script type="text/javascript">
+			var menu = Array();
+			menu['Service'] = "";
+			menu['Common'] = "";
+			menu['Detail'] = "";
+			var config = Array(); 
+			config['Service'] = "js";
+			config['Service_Name'] = "오피스키퍼";
+			config['Service_Title'] = "중소기업 통합PC보안이 가능한 정보유출방지 솔루션";
+			config['Contact_Purchase_Call'] = "1670-6390";
+			config['Contact_Purchase_Time'] = "09:00 ~ 18:00 (토, 일, 공휴일 휴무)";
+			config['Contact_Disability_Call'] = "1661-5975";
+			config['Contact_Disability_Time'] = "09:00 ~ 18:00 (토, 일, 공휴일 휴무)";
+			var company = 
+			{
+				"Company" : "11090100",
+				"Department" : "1",
+				"Name" : "Jiran"
+			}
+			var manager = 
+			{
+				"Manager" : "7",
+				"ID" : "wldus1325",
+				"Name" : "Jiran",
+				"Department" : "Jiran",
+				"DepartmentName" : "Jiran",
+				"FullName" : "Jiran",
+				"PermissionGroup" : "1",
+				"PermissionGroup_Name" : "Jiran",
+				"PermissionGroup_FullName" : "Jiran"
+			};
+			var incompatibility = false;
+		</script>
+		<!-- =============== (END) DEVELOPER :: 메뉴별 필요한 변수 =============== -->
+	</head>
+	
+	<!--[if lte IE 8]>
+		<script type="text/javascript">
+			incompatibility = true;
+			location.href="/incompatibility";
+		</script>
+	<![endif]-->
+
+	<body>
+		<!-- Shadow : 알림메시지 팝업 시 사용 -->
+		<div class="bg_shadow" style="display: none;"></div>
+		
+		<!-- Header -->
+		<!-- (1) /views/common/frame/main_header.php -->
+		
+<!-- header -->
+<div class="header" id="header">
+	<div class="wrap_header_servicebar">
+		<div class="header_servicebar">
+			<a class="btn_global service_overview">전체 메뉴</a><ul class="list_service"><li class="list01">	<a class="on" href="/pc/dashboard"><span class="text">통합PC보안</span></a></li><li class="list02">	<a href="/print/dashboard"><span class="text">출력물보안</span></a></li></ul>		</div>
+	</div>
+	<div class="wrap_header_topbar">
+		<!-- =============== (START) DEVELOPER :: 서비스별 분기 =============== -->
+				<div class="skin_ok_left">
+			<div class="skin_ok_right">
+				<!-- =============== (END) DEVELOPER :: 서비스별 분기 ============== -->
+				<div class="header_topbar">
+					<!-- =============== (START) DEVELOPER :: 서비스별 분기 =============== -->
+										<h1 class="logo_ok">
+											<!-- =============== (END) DEVELOPER :: 서비스별 분기 ============== -->
+						<a href="/">오피스키퍼</a>
+											</h1>
+					<div class="area_topbar">
+						<!-- 
+						<a href="#" class="btn_alert_msg">
+							<span class="text_new">99+</span>
+							<span class="blind">알림 리스트</span>
+						</a>
+ 						-->
+						<!-- =============== (START) DEVELOPER :: 사용중인 태그 값  =============== -->
+						<!--  li : class('list_topbar')  -->
+						<!--  ul : class('list번호')  -->
+						<!-- =============== (START) DEVELOPER :: 사용중인 태그 값 =============== -->
+						<ul class="list_topbar">
+							<li class="list01">	<a>		<span class="text">조직도</span>	</a>	<div class="sub_menu_list" style="display: none;">		<span class="bar_top"></span>		<ul><li><a href="/common/organization/organization">조직도 설정</a></li><li class="end_list"><a href="/common/organization/account">통합 계정 설정</a></li>		</ul>	</div><li><li class="list02">	<a>		<span class="text">에이전트</span>	</a>	<div class="sub_menu_list" style="display: none;">		<span class="bar_top"></span>		<ul><li><a href="/common/agent/agentdistribute">에이전트 배포</a></li><li><a href="/common/agent/installstate_agent">설치현황 조회</a></li><li><a href="/common/agent/agentincapacity">무력화 시도내역 조회</a></li><li><a href="/common/agent/security_safemodelock">보호정책 설정</a></li><li><a href="/common/agent/agentalert">경고알림 설정</a></li><li class="end_list"><a href="/common/agent/agentnotice">공지사항 설정</a></li>		</ul>	</div><li><li class="list04">	<a>		<span class="text">계약관리</span>	</a>	<div class="sub_menu_list" style="display: none;">		<span class="bar_top"></span>		<ul><li><a href="/common/contract/info">계약정보 관리</a></li><li class="end_list"><a href="/common/contract/certification">소프트웨어 사용권 인증서</a></li>		</ul>	</div><li><li class="list05">	<a href="/common/release/temppassword">		<span class="text">임시 비밀번호</span>	</a><li><li class="list06">	<a>		<span class="text">고객센터</span>	</a>	<div class="sub_menu_list" style="display: none;">		<span class="bar_top"></span>		<ul><li><a href="/common/announce/update">업데이트 안내</a></li><li><a href="/common/announce/service">서비스 이용 안내</a></li><li><a href="/common/announce/technical">기술지원 안내</a></li><li class="end_list"><a href="/common/announce/FAQ">자주하는 질문(FAQ)</a></li>		</ul>	</div><li>							
+						</li></ul>
+						<div class="area_admin_info">
+							<ul class="list_info">
+								<!-- =============== (START) DEVELOPER :: 고객사 및 관리자 정보 표시 =============== -->
+								<li class="name_office">Jiran</li>
+								<li class="name_admin">관리자</li>
+								<!-- =============== (START) DEVELOPER :: 고객사 및 관리자 정보 표시 =============== -->
+							</ul>
+							<!-- 로고 선택 UI는 추후 추가 예정입니다. -->
+							<a class="btn_select_officeimg">
+								<div class="select_img">
+									<!--  <div class="logo_img default"></div>-->
+									<img style="width: 100%; height: 100%;" src="/company/get_image?2016-09-19 16:46:01">
+								</div>
+								<span class="list_manager icon_arrow"></span><!-- class="icon_arrow_on" 일 때 화살표가 위로 올라갑니다 -->
+							</a>
+							<!-- //로고 선택 UI는 추후 추가 예정입니다. -->
+							<div class="menu_list" style="display: none;">
+								<ul>
+									<li><a href="/common/manager/adminaccount">내 정보 조회 및 수정</a></li><li><a href="/common/manager/alertmail">알림메일 수신설정</a></li><li><a href="/common/manager/manage_account">관리자 관리 및 추가설정</a></li><li><a href="/common/manager/adminpolicy">관리자 보안정책 설정</a></li><li><a href="/common/manager/managerlog">로그인 및 정책변경 내역 조회</a></li>									<li class="end_list"><a onclick="javascript:logout();">로그아웃</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //header -->
+
+				
+		<!-- wrapper -->
+		<div class="wrapper">
+			<!-- container -->
+			<div class="container clear_f">
+				
+				<!-- Left -->
+				<!-- (1) /views/common/frame/main_left.php -->
+				
+<!-- GNB 영역 -->
+<div class="wrap_gnb" id="gnb">
+	
+		<!-- 서비스 메뉴 (gnb) -->
+	<div class="gnb sidebar_sec_wrapper sidebar_sec_wrapper_first">
+		<!-- 사이드바 영역 제목 -->
+		<div class="sidebar_sec_header">
+			<h6 class="font_bold">서비스 메뉴</h6>
+		</div>
+		<!-- // 사이드바 영역 제목 -->
+		<ul class="menu_depth01"> <!-- 클래스 수정 (섭, 160426) -->
+		<li class="menu01 " menu="6">	<a class="on" href="/pc/dashboard">대시보드</a></li><li class="menu02 menu_navi off" menu="7">	<a>로그 조회</a><ul class="menu_depth02" style="display: none;"><li class="menu_navi off" menu="10">	<a>정보유출방지</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/dlp/log/storagemedia">저장매체별 내역</a></li><li>	<a href="/pc/dlp/log/fileattach">파일첨부 내역</a></li><li class="list_end">	<a href="/pc/dlp/log/screencapture">화면캡처 내역</a></li>	</ul></li><li class="menu_navi off" menu="14">	<a>개인정보관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/privacy/log/realtime">실시간 감시 내역</a></li><li>	<a href="/pc/privacy/log/detail">수동 검사 내역</a></li><li>	<a href="/pc/privacy/log/filesafe">파일 암/복호화 내역</a></li><li class="list_end">	<a href="/pc/privacy/log/filedelete">파일 완전삭제 내역</a></li>	</ul></li><li class="menu_navi off" menu="19">	<a>업무환경관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/enviroment/log/softwareblock">소프트웨어 실행 차단내역</a></li><li>	<a href="/pc/enviroment/log/internetblock">웹사이트 접속 차단내역</a></li><li>	<a href="/pc/enviroment/log/softwareuse">소프트웨어 실행현황</a></li><li class="list_end">	<a href="/pc/enviroment/log/internetuse">웹사이트 접속현황</a></li>	</ul></li><li class="menu_navi off" menu="24">	<a>인재관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/human/log/jobsite">취업사이트 접속내역</a></li><li>	<a href="/pc/human/log/forbiddenwordinternet">웹 검색 내역</a></li><li class="list_end">	<a href="/pc/human/log/forbiddenworddocument">문서활용 내역</a></li>	</ul></li><li class="menu_navi off" menu="28">	<a>IT자산관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/asset/log/softwarelicense">소프트웨어 라이선스<br>관리현황</a></li><li>	<a href="/pc/asset/log/hardware">하드웨어 현황 및<br>HDD 변경내역</a></li><li>	<a href="/pc/asset/log/computerIP">컴퓨터IP 사용현황 및<br>변경내역</a></li><li>	<a href="/pc/asset/log/computerlocate">컴퓨터 반출현황 및<br>반출내역</a></li><li>	<a href="/pc/asset/log/computeruse">컴퓨터 활용현황</a></li><li>	<a href="/pc/asset/log/computerprevent">컴퓨터 방범현황</a></li><li>	<a href="/pc/asset/log/computersecurity">컴퓨터 보안현황</a></li><li class="list_end">	<a href="/pc/asset/log/computeronoff">컴퓨터 ON/OFF 내역</a></li>	</ul></li></ul></li><li class="menu03 menu_navi off" menu="8">	<a>정책 설정</a><ul class="menu_depth02" style="display: none;"><li class="menu_navi off" menu="37">	<a>정보유출방지</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/dlp/policy/storagemedia">저장매체별 차단정책</a></li><li>	<a href="/pc/dlp/policy/fileattach">파일첨부 차단정책</a></li><li>	<a href="/pc/dlp/policy/screencapture">화면캡처 차단정책</a></li><li class="list_end">	<a href="/pc/dlp/policy/sharedfolder">공유폴더 차단정책</a></li>	</ul></li><li class="menu_navi off" menu="42">	<a>개인정보관리</a>	<ul class="menu_depth03" style="display: none;"><li class="list_end">	<a href="/pc/privacy/policy/realtime">실시간 감시 정책</a></li>	</ul></li><li class="menu_navi off" menu="44">	<a>업무환경관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/enviroment/policy/softwareblock">소프트웨어 실행 차단정책</a></li><li>	<a href="/pc/enviroment/policy/internetblock">웹사이트 접속 차단정책</a></li><li>	<a href="/pc/enviroment/policy/softwareuse">소프트웨어 실행내역<br>수집정책</a></li><li class="list_end">	<a href="/pc/enviroment/policy/internetuse">웹사이트 접속내역<br>수집정책</a></li>	</ul></li><li class="menu_navi off" menu="49">	<a>인재관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/human/policy/jobsite">취업사이트 접속내역<br>수집정책</a></li><li>	<a href="/pc/human/policy/forbiddenwordinternet">웹 검색 내역 수집정책</a></li><li class="list_end">	<a href="/pc/human/policy/forbiddenworddocument">문서활용 내역 수집정책</a></li>	</ul></li><li class="menu_navi off" menu="53">	<a>IT자산관리</a>	<ul class="menu_depth03" style="display: none;"><li>	<a href="/pc/asset/policy/softwarelicense">소프트웨어 라이선스<br>관리정책</a></li><li>	<a href="/pc/asset/policy/computerinout">컴퓨터 반출정책</a></li><li>	<a href="/pc/asset/policy/sleepmodecomputer">컴퓨터 절전정책</a></li><li class="list_end">	<a href="/pc/asset/policy/computeruse">컴퓨터 활용내역 수집정책</a></li>	</ul></li></ul></li><li class="menu04 menu_navi on" menu="9">	<a>보고서</a><ul class="menu_depth02"><li class="solo">	<a href="/pc/monthreport">월별 현황보고서</a></li><li class="solo">	<a href="/pc/personreport_environment">개인별 현황보고서</a></li></ul></li>		</ul>
+	</div>
+	
+
+
+	<!-- 바로가기 -->
+	<div class="sidebar_sec_wrapper ">
+		<!-- 사이드바 영역 제목 -->
+		<div class="sidebar_sec_header sidebar_sec_header_custom_margin_bottom_9">
+			<h6 class="font_bold">바로가기</h6>
+		</div>
+		<!-- // 사이드바 영역 제목 -->
+		<!-- 바로가기 리스트 -->
+		<div class="sidebar_sec_shortcut">
+			<ul>
+				<a href="/common/announce/service">
+					<li>
+						메뉴얼 다운로드
+						<span class="icn_sidebar_shortcut"></span>
+					</li>
+				</a>
+				<a href="/common/announce/technical">
+					<li>
+						기술지원안내
+						<span class="icn_sidebar_shortcut"></span>
+					</li>
+				</a>
+			</ul>
+		</div>
+		<!-- // 바로가기 리스트 -->
+	</div>
+	<!-- // 바로가기 -->
+	
+	<!-- 서비스 요약정보 -->
+	<div class="sidebar_sec_wrapper sidebar_sec_wrapper_last">
+		<!-- 사이드바 영역 제목 -->
+		<div class="sidebar_sec_header sidebar_sec_header_custom_margin_bottom_9">
+			<h6 class="font_bold">서비스 요약정보</h6>
+		</div>
+		<!-- // 사이드바 영역 제목 -->
+		<!-- 사이드바 위젯 -->
+		<div class="sidebar_sec_widget">
+			<!-- 사이드바 위젯 헤더 -->
+			<div class="sidebar_sec_widget_header">
+				오피스키퍼 설치정보
+			</div>
+			<!-- // 사이드바 위젯 헤더 -->
+			<!-- 사이드바 위젯 바디 -->
+			<div class="sidebar_sec_widget_body">
+				<!-- 시리얼 번호 -->
+				<ul class="sidebar_sec_widget_cont ">
+					<li class="clear_f">
+						<div class="float_left">
+							시리얼 번호
+						</div>
+						<div class="float_right">
+							<a class="color_blue01 font_bold" href="/common/contract/info">
+								<!-- 시리얼번호 값 -->JS11090100							</a>
+						</div>
+					</li>
+				</ul>
+				<!-- // 시리얼 번호 -->
+				<!-- 구분선 --><div class="sidebar_sec_widget_divider"></div>
+				<!-- 라이선스 수량 -->
+				<ul class="sidebar_sec_widget_cont">
+					<li class="clear_f">
+						<div class="float_left">
+							라이선스 구매수량
+						</div>
+						<div class="float_right">
+							<a class="color_blue01 font_bold" href="/common/contract/info">
+								<!-- 라이선스 구매 수량 값 -->400							</a>
+						</div>
+					</li><li class="clear_f">
+						<div class="float_left">
+							잔여<span class="text_divider text_divider_custom_padding">|</span>사용
+						</div>
+						<div class="float_right">
+							<a class="color_blue01 font_bold" href="/common/contract/info">
+								<!-- 잔여 값 -->4							</a>
+							<span class="text_divider">|</span>
+							<a class="color_blue01 font_bold" href="/common/contract/info">
+								<!-- 사용 값 -->396							</a>
+							<a class="color_orange01 font_bold mouse_tooltip_trigger" onclick="setCookie('Radio', 'notauth');" href="/common/agent/installstate_agent" data-tooltip-text="">
+								<!-- 미인증 값 -->(147)
+								<!-- 미인증 값 관련 툴팁 -->
+								<div class="mouse_tooltip font_reg">
+						            <span class="font_bold color_orange01">[미인증 라이선스]</span>
+						            <ul>
+						            	<li>
+						            		1주 이상 인증 되지 않은 에이전트 라이선스 입니다.
+						            	</li>
+						            	<li>
+						            		미인증 라이선스를 확인/관리하려면  해당 숫자를
+						            		클릭해서 관련 페이지로 이동해 주세요.
+						            	</li>
+						            </ul>
+					            </div>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<!-- // 라이선스 수량 -->
+				<!-- 구분선 --><div class="sidebar_sec_widget_divider"></div>
+				<!-- 조직도 등록인원 및 설치현황 -->
+				<ul class="sidebar_sec_widget_cont">
+					<li class="clear_f">
+						<div class="float_left">
+							조직도 등록인원
+						</div>
+						<div class="float_right">
+							<a class="color_blue01 font_bold" href="/common/organization/organization">
+								<!-- 조직도 등록인원 값 -->362							</a>
+						</div>
+					</li>
+					<li class="clear_f">
+						<div class="float_left">
+							설치<span class="text_divider text_divider_custom_padding">|</span>미설치
+						</div>
+						<div class="float_right">
+							<a class="color_blue01 font_bold" href="/common/agent/installstate_agent">
+								<!-- 설치/미설치 값 -->273							</a>
+							<span class="text_divider">|</span>
+							<a class="color_orange01 font_bold" href="/common/agent/agentdistribute">
+								89							</a>
+						</div>
+					</li>
+				</ul>
+				<!-- // 조직도 등록인원 및 설치현황 -->
+			</div>
+			<!-- // 사이드바 위젯 바디 -->
+		</div>
+		<!-- // 사이드바 위젯 -->
+	</div>
+	<!-- // 서비스 요약정보 -->
+</div>
+<!-- //GNB 영역 -->				
+				<!-- Content -->
+				<div class="contents">
+						
+					<!-- Content -->
+					
+<!-- page title -->
+<!-- (1) /views/common/title/title1.php -->
+
+<!-- title1 사용처 -->
+<!-- (1) /views/custom/pc/dlp/log/storagemedia.php (통합PC보안 - 로그 조회 - 정보유출방지 - 저장매체별 내역) -->
+
+<!-- page title -->
+<div class="area_pagenavi">
+	<h3>
+		<a class="title_page">대시보드</a>
+		<!-- <a class="btn_pagetip">페이지 Tip</a>  -->
+	</h3>
+	<ul class="list_pagenavi">
+		<li class="list_home"><a href="#">홈</a></li>
+						<li class="list_menu"><a href="#">대시보드</a></li>
+					</ul>
+	</div>
+<!-- //page title -->
+
+<!-- search bar -->
+<!-- (1) /views/common/setbox/setbox1.php -->
+
+<!-- setbox1.php -->
+<!-- 01. 부서 선택이 관리 부서만 -->
+
+<!-- box1 사용처 -->
+<!-- (1) /views/custom/pc/dlp/log/storagemedia.php (통합PC보안 - 로그 조회 - 정보유출방지 - 저장매체별 내역) -->
+
+<div class="area_selectbar" id="#selectarea">
+	<fieldset>
+	<legend>관련기능, 부서선택</legend>
+	<!-- 선택 영역 -->
+		<!-- //선택 영역 -->
+	<!-- 선택 영역 -->
+		<div class="form_select border_b clear_f">
+		<!-- select -->
+		<div class="selectlist">
+			<h4 class="title_selectlist_date">
+				<span class="icon"></span>
+				<span class="text">조회기간</span>
+			</h4>
+			<div class="selectlist_group">
+				<div class="list_select">
+					<div class="select_no" style="width: 207px;"><span class="html" name="startdate" value="2016-09-13" parent="setbox1">2016.09.13</span> ~ <span class="html" name="enddate" value="2016-09-19" parent="setbox1">2016.09.19</span></div>
+				</div>
+			</div>
+		</div>
+		<!-- //select -->
+	</div>
+		<!-- //선택 영역 -->
+	<!-- 부서선택 영역 -->
+		<!-- =============== (START) DEVELOPER : class('setbox'), name('group'), parent('') 는 기능동작에 필요한 속성값  =============== -->
+	<div class="form_select border_b clear_f setbox" name="department" value="1" parent="setbox1">
+	<!-- =============== (END) DEVELOPER : class('setbox'), name('group'), parent('') 는 기능동작에 필요한 속성값  =============== -->
+		<!-- select -->
+		<div class="selectlist selectlist_singlebox">
+			<h4 class="title_selectlist_group">
+				<span class="icon"></span>
+				<span class="text setbox" name="title" parent="department">부서선택</span>
+			</h4>
+			<div class="selectlist_group setbox" name="selectlist_group" value="1" parent="setbox1">
+				<div class="list_select list_on" value="1">
+					<a name="title" class="select" style="width: 450px;" parent="setbox1">Jiran</a>
+					<ul class="select_falllist02 select" style="display: none;" name="box" parent="setbox1">
+						
+					<li class="select" value="1" name="item" parent="department">	<a class="on">Jiran</a></li><li class="select" value="13766" name="item" parent="department">	<a>Jiran &gt; Jiransoft Japan</a></li><li class="select" value="13770" name="item" parent="department">	<a>Jiran &gt; Jiransoft Japan Tech</a></li><li class="select" value="66669389" name="item" parent="department">	<a>Jiran &gt; 나모에디터</a></li><li class="select" value="66666694" name="item" parent="department">	<a>Jiran &gt; 지란지교</a></li><li class="select" value="13775" name="item" parent="department">	<a>Jiran &gt; 지란지교소프트</a></li><li class="select" value="13815" name="item" parent="department">	<a>Jiran &gt; 지란지교시큐리티</a></li><li class="select" value="13838" name="item" parent="department">	<a>Jiran &gt; 지란지교에스앤씨</a></li><li class="select" value="13801" name="item" parent="department">	<a>Jiran &gt; 지란지교컴즈</a></li></ul>
+				</div>
+			</div>
+		</div>
+		<!-- //select -->
+	</div>
+		<!-- //부서선택 영역 -->
+		</fieldset>
+</div><!-- //search bar -->
+
+<!-- card contents -->
+<div class="area_cardcon clear_f" id="#grapharea">
+	<!-- card layout area 2개일 때 -->
+	<!-- 01 :: 정보유출현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('dataloss') =============== -->
+	<div class="layout_card layout_card_2left card" name="dataloss">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('dataloss') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">정보유출현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail content_menu common_menu_list title_menu">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" parent="dataloss">상세</a>
+				<ul class="config_popup common_item_list" style="right: 0px; display: none;" name="common_item_list" parent="dataloss">
+					<li><a style="margin: 0px; display: block;" href="/pc/dlp/log/storagemedia">저장매체별 내역</a></li>
+					<li><a style="margin: 0px; display: block;" href="/pc/dlp/log/fileattach">파일첨부 내역</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('dataloss') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="bar" parent="dataloss" data-highcharts-chart="1"><div class="highcharts-container" id="highcharts-4" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-5"><rect x="0" y="0" width="403" height="180" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-grid" /><g class="highcharts-grid"><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 39 190.5 L 442 190.5" /><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 39 130.5 L 442 130.5" /><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 39 70.5 L 442 70.5" /><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 39 9.5 L 442 9.5" /></g><g class="highcharts-axis"><path fill="none" stroke="#c0d0e0" stroke-width="1" d="M 39 190.5 L 442 190.5" /></g><g class="highcharts-axis" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" clip-path="url(&quot;#highcharts-5&quot;)" transform="translate(39 10) scale(1)"><rect fill="#ff6600" x="12" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff6600" x="70" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff6600" x="127" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff6600" x="185" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff6600" x="243" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff6600" x="300" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff6600" x="358" y="181" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-0" clip-path="none" transform="translate(39 10) scale(1)" /><g class="highcharts-series highcharts-series-1 highcharts-tracker" clip-path="url(&quot;#highcharts-5&quot;)" transform="translate(39 10) scale(1)"><rect fill="#ffba00" x="24" y="159" width="10" height="22" rx="0" ry="0" /><rect fill="#ffba00" x="81" y="180" width="10" height="1" rx="0" ry="0" /><rect fill="#ffba00" x="139" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ffba00" x="197" y="180" width="10" height="1" rx="0" ry="0" /><rect fill="#ffba00" x="254" y="180" width="10" height="1" rx="0" ry="0" /><rect fill="#ffba00" x="312" y="180" width="10" height="1" rx="0" ry="0" /><rect fill="#ffba00" x="369" y="59" width="10" height="122" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-1" clip-path="none" transform="translate(39 10) scale(1)" /><g class="highcharts-series highcharts-series-2 highcharts-tracker" clip-path="url(&quot;#highcharts-5&quot;)" transform="translate(39 10) scale(1)"><rect fill="#ff8d41" x="35" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff8d41" x="93" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff8d41" x="150" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff8d41" x="208" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff8d41" x="266" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff8d41" x="323" y="181" width="10" height="0" rx="0" ry="0" /><rect fill="#ff8d41" x="381" y="181" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-2" clip-path="none" transform="translate(39 10) scale(1)" /></g><text class="highcharts-title" style="width: 388px; color: rgb(51, 51, 51); font-size: 18px; display: none; fill: #333333;" text-anchor="middle" x="226" y="24"><tspan>Chart title</tspan></text><g class="highcharts-axis-labels highcharts-xaxis-labels"><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="67.7857" y="210">13일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="125.3571" y="210">14일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="182.9286" y="210">15일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="240.5" y="210">16일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="298.0715" y="210">17일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="355.6429" y="210">18일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="413.2143" y="210">19일</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="24" y="195">0k</text><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="24" y="135">1k</text><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="24" y="75">2k</text><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="24" y="15">3k</text></g><g class="highcharts-tooltip" visibility="visible" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" opacity="0" transform="translate(62 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 135.5 0.5 C 138.5 0.5 138.5 0.5 138.5 3.5 L 138.5 76.5 C 138.5 79.5 138.5 79.5 135.5 79.5 L 3.5 79.5 C 0.5 79.5 0.5 79.5 0.5 76.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 135.5 0.5 C 138.5 0.5 138.5 0.5 138.5 3.5 L 138.5 76.5 C 138.5 79.5 138.5 79.5 135.5 79.5 L 3.5 79.5 C 0.5 79.5 0.5 79.5 0.5 76.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 135.5 0.5 C 138.5 0.5 138.5 0.5 138.5 3.5 L 138.5 76.5 C 138.5 79.5 138.5 79.5 135.5 79.5 L 3.5 79.5 C 0.5 79.5 0.5 79.5 0.5 76.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" stroke="rgba(187, 187, 187, 1)" stroke-width="1" d="M 3.5 0.5 L 135.5 0.5 C 138.5 0.5 138.5 0.5 138.5 3.5 L 138.5 76.5 C 138.5 79.5 138.5 79.5 135.5 79.5 L 3.5 79.5 C 0.5 79.5 0.5 79.5 0.5 76.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"><tspan style="font-weight: bold;">13일</tspan><tspan x="8" dy="15">저장매체 저장 : 0건</tspan><tspan x="8" dy="15">파일첨부 전송 : 369건</tspan><tspan x="8" dy="15">USB 무단반출 : 0건</tspan></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" parent="dataloss">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('dataloss') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_orange01"></span>
+							<span class="text_title">저장매체 저장</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlrm'), parent('dataloss') =============== -->
+								(총 <span class="color_orange01-1 text" name="dlrm" parent="dataloss">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlrm'), parent('dataloss') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_orange06"></span>
+							<span class="text_title">파일첨부 전송</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlsw'), parent('dataloss') =============== -->
+								(총 <span class="color_orange01-1 text" name="dlsw" parent="dataloss">2453</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlsw'), parent('dataloss') =============== -->
+							</span>
+						</li>
+						<li class="info03 float_left">
+							<span class="color_orange02"></span>
+							<span class="text_title">USB 무단반출</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('usb'), parent('dataloss') =============== -->
+								(총 <span class="color_orange01-1 text" name="usb" parent="dataloss">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('usb'), parent('dataloss') =============== -->
+							</span>
+						</li>
+					</ul>
+					<div class="area_end">
+						<div class="end_info clear_f">
+							<div class="float_right">
+								<span class="text_title">총 정보유출 건수</span><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('dataloss') =============== -->
+								<span class="text_value"><span class="color_orange01-1 text" name="total" parent="dataloss">2453</span> 건</span><!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('dataloss') =============== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //01 :: 정보유출현황 -->
+	
+	<!-- 02 :: 정보유출 차단현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('dataloss_block') =============== -->
+	<div class="layout_card layout_card_2right card" name="dataloss_block">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('dataloss_block') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">정보유출 차단현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail content_menu common_menu_list title_menu">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" parent="dataloss_block">상세</a>
+				<ul class="config_popup common_item_list" style="right: 0px; display: none;" name="common_item_list" parent="dataloss_block">
+					<li><a style="margin: 0px; display: block;" href="/pc/dlp/log/storagemedia">저장매체별 내역</a></li>
+					<li><a style="margin: 0px; display: block;" href="/pc/dlp/log/fileattach">파일첨부 내역</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('dataloss_block') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="bar" parent="dataloss_block" data-highcharts-chart="5"><div class="highcharts-container" id="highcharts-12" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-13"><rect x="0" y="0" width="410" height="180" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-grid" /><g class="highcharts-grid"><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 32 100.5 L 442 100.5" /></g><g class="highcharts-axis"><path fill="none" stroke="#c0d0e0" stroke-width="1" d="M 32 190.5 L 442 190.5" /></g><g class="highcharts-axis" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" clip-path="url(&quot;#highcharts-13&quot;)" transform="translate(32 10) scale(1)"><rect fill="#0059a6" x="15" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="74" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="133" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="191" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="250" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="308" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="367" y="91" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-0" clip-path="none" transform="translate(32 10) scale(1)" /><g class="highcharts-series highcharts-series-1 highcharts-tracker" clip-path="url(&quot;#highcharts-13&quot;)" transform="translate(32 10) scale(1)"><rect fill="#1f8c13" x="33" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="92" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="150" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="209" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="267" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="326" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="385" y="91" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-1" clip-path="none" transform="translate(32 10) scale(1)" /></g><text class="highcharts-title" style="width: 388px; color: rgb(51, 51, 51); font-size: 18px; display: none; fill: #333333;" text-anchor="middle" x="226" y="24"><tspan>Chart title</tspan></text><g class="highcharts-axis-labels highcharts-xaxis-labels"><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="61.2857" y="210">13일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="119.8571" y="210">14일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="178.4286" y="210">15일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="237" y="210">16일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="295.5715" y="210">17일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="354.1429" y="210">18일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="412.7143" y="210">19일</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="17" y="105">0</text></g><g class="highcharts-tooltip" visibility="visible" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" opacity="0" transform="translate(58 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 120.5 0.5 C 123.5 0.5 123.5 0.5 123.5 3.5 L 123.5 61.5 C 123.5 64.5 123.5 64.5 120.5 64.5 L 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 120.5 0.5 C 123.5 0.5 123.5 0.5 123.5 3.5 L 123.5 61.5 C 123.5 64.5 123.5 64.5 120.5 64.5 L 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 120.5 0.5 C 123.5 0.5 123.5 0.5 123.5 3.5 L 123.5 61.5 C 123.5 64.5 123.5 64.5 120.5 64.5 L 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" stroke="rgba(187, 187, 187, 1)" stroke-width="1" d="M 3.5 0.5 L 120.5 0.5 C 123.5 0.5 123.5 0.5 123.5 3.5 L 123.5 61.5 C 123.5 64.5 123.5 64.5 120.5 64.5 L 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"><tspan style="font-weight: bold;">13일</tspan><tspan x="8" dy="15">저장매체 차단 : 0건</tspan><tspan x="8" dy="15">파일첨부 차단 : 0건</tspan></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" parent="dataloss_block">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('dataloss_block') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_blue01"></span>
+							<span class="text_title">저장매체 차단</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlrm'), parent('dataloss_block') =============== -->
+								(총 <span class="color_orange01-1 text" name="dlrm" parent="dataloss_block">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlrm'), parent('dataloss_block') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_green01"></span>
+							<span class="text_title">파일첨부 차단</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlsw'), parent('dataloss_block') =============== -->
+								(총 <span class="color_orange01-1 text" name="dlsw" parent="dataloss_block">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('dlsw'), parent('dataloss_block') =============== -->
+							</span>
+						</li>
+						<li class="info03 float_left">
+						</li>
+						<li class="info04 float_right">
+						</li>
+					</ul>
+					<div class="area_end">
+						<div class="end_info clear_f">
+							<div class="float_right">
+								<span class="text_title">총 정보유출 차단건수</span><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('dataloss_block') =============== -->
+								<span class="text_value"><span class="color_orange01-1 text" name="total" parent="dataloss_block">0</span> 건</span><!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('dataloss_block') =============== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //02 :: 정보유출 차단현황 -->
+	
+	<!-- 03 :: 개인정보 검출현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('privacy') =============== -->
+	<div class="layout_card layout_card_1solo card" name="privacy">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('privacy') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">개인정보 검출현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail content_menu common_menu_list title_menu">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" parent="privacy">상세</a>
+				<ul class="config_popup common_item_list" style="right: 0px; display: none;" name="common_item_list" parent="privacy">
+					<li><a style="margin: 0px; display: block;" href="/pc/privacy/log/realtime">실시간 감시 내역</a></li>
+					<li><a style="margin: 0px; display: block;" href="/pc/privacy/log/detail">수동 검사 내역</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('privacy') =============== -->
+				<div class="view_graph graph content" style="height: 219px;" name="line" parent="privacy" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="width: 954px; height: 219px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="954" height="219" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-1"><rect x="0" y="0" width="897" height="183" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="954" height="219" /><g class="highcharts-grid" /><g class="highcharts-grid"><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 47 193.5 L 944 193.5" /><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 47 132.5 L 944 132.5" /><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 47 71.5 L 944 71.5" /><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 47 9.5 L 944 9.5" /></g><g class="highcharts-axis"><path fill="none" stroke="#c0d0e0" stroke-width="1" d="M 47 193.5 L 944 193.5" /></g><g class="highcharts-axis" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0" clip-path="url(&quot;#highcharts-1&quot;)" transform="translate(47 10) scale(1)"><path fill="none" stroke="#0059a6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M 64.0714 17.69 L 192.214 170.19 L 320.357 157.38 L 448.5 183 L 576.643 183 L 704.786 183 L 832.929 89.06" /><path class=" highcharts-tracker" visibility="visible" style="cursor: pointer;" fill="none" stroke="rgba(192, 192, 192, 0.0001)" stroke-linejoin="round" stroke-width="22" d="M 54.0714 17.69 L 64.0714 17.69 L 192.214 170.19 L 320.357 157.38 L 448.5 183 L 576.643 183 L 704.786 183 L 832.929 89.06 L 842.929 89.06" /></g><g class="highcharts-markers highcharts-series-0 highcharts-tracker" style="cursor: pointer;" clip-path="url(&quot;#highcharts-2&quot;)" transform="translate(47 10) scale(1)"><path fill="#ffffff" stroke="#0059a6" stroke-width="2" d="M 832 85.06 C 837.328 85.06 837.328 93.06 832 93.06 C 826.672 93.06 826.672 85.06 832 85.06 Z" /><path fill="#ffffff" stroke="#0059a6" stroke-width="2" d="M 704 179 C 709.328 179 709.328 187 704 187 C 698.672 187 698.672 179 704 179 Z" /><path fill="#ffffff" stroke="#0059a6" stroke-width="2" d="M 576 179 C 581.328 179 581.328 187 576 187 C 570.672 187 570.672 179 576 179 Z" /><path fill="#ffffff" stroke="#0059a6" stroke-width="2" d="M 448 179 C 453.328 179 453.328 187 448 187 C 442.672 187 442.672 179 448 179 Z" /><path fill="#ffffff" stroke="#0059a6" stroke-width="2" d="M 320 153.38 C 325.328 153.38 325.328 161.38 320 161.38 C 314.672 161.38 314.672 153.38 320 153.38 Z" /><path fill="#ffffff" stroke="#0059a6" stroke-width="3" d="M 192 164.19 C 199.992 164.19 199.992 176.19 192 176.19 C 184.008 176.19 184.008 164.19 192 164.19 Z" /><path fill="#ffffff" stroke="#0059a6" stroke-width="2" d="M 64 13.69 C 69.328 13.69 69.328 21.69 64 21.69 C 58.672 21.69 58.672 13.69 64 13.69 Z" /></g><g class="highcharts-series highcharts-series-1" clip-path="url(&quot;#highcharts-1&quot;)" transform="translate(47 10) scale(1)"><path fill="none" stroke="#1f8c13" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M 64.0714 85.4 L 192.214 180.56 L 320.357 181.78 L 448.5 181.78 L 576.643 182.39 L 704.786 183 L 832.929 69.54" /><path class=" highcharts-tracker" visibility="visible" style="cursor: pointer;" fill="none" stroke="rgba(192, 192, 192, 0.0001)" stroke-linejoin="round" stroke-width="22" d="M 54.0714 85.4 L 64.0714 85.4 L 192.214 180.56 L 320.357 181.78 L 448.5 181.78 L 576.643 182.39 L 704.786 183 L 832.929 69.54 L 842.929 69.54" /></g><g class="highcharts-markers highcharts-series-1 highcharts-tracker" style="cursor: pointer;" clip-path="url(&quot;#highcharts-2&quot;)" transform="translate(47 10) scale(1)"><path fill="#ffffff" stroke="#1f8c13" stroke-width="2" d="M 832 65.54 C 837.328 65.54 837.328 73.54 832 73.54 C 826.672 73.54 826.672 65.54 832 65.54 Z" /><path fill="#ffffff" stroke="#1f8c13" stroke-width="2" d="M 704 179 C 709.328 179 709.328 187 704 187 C 698.672 187 698.672 179 704 179 Z" /><path fill="#ffffff" stroke="#1f8c13" stroke-width="2" d="M 576 178.39 C 581.328 178.39 581.328 186.39 576 186.39 C 570.672 186.39 570.672 178.39 576 178.39 Z" /><path fill="#ffffff" stroke="#1f8c13" stroke-width="2" d="M 448 177.78 C 453.328 177.78 453.328 185.78 448 185.78 C 442.672 185.78 442.672 177.78 448 177.78 Z" /><path fill="#ffffff" stroke="#1f8c13" stroke-width="2" d="M 320 177.78 C 325.328 177.78 325.328 185.78 320 185.78 C 314.672 185.78 314.672 177.78 320 177.78 Z" /><path fill="#ffffff" stroke="#1f8c13" stroke-width="3" d="M 192 174.56 C 199.992 174.56 199.992 186.56 192 186.56 C 184.008 186.56 184.008 174.56 192 174.56 Z" /><path fill="#ffffff" stroke="#1f8c13" stroke-width="2" d="M 64 81.4 C 69.328 81.4 69.328 89.4 64 89.4 C 58.672 89.4 58.672 81.4 64 81.4 Z" /></g><g class="highcharts-series highcharts-series-2" clip-path="url(&quot;#highcharts-1&quot;)" transform="translate(47 10) scale(1)"><path fill="none" stroke="#3c9df0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M 64.0714 170.8 L 192.214 183 L 320.357 183 L 448.5 183 L 576.643 183 L 704.786 183 L 832.929 164.7" /><path class=" highcharts-tracker" visibility="visible" style="cursor: pointer;" fill="none" stroke="rgba(192, 192, 192, 0.0001)" stroke-linejoin="round" stroke-width="22" d="M 54.0714 170.8 L 64.0714 170.8 L 192.214 183 L 320.357 183 L 448.5 183 L 576.643 183 L 704.786 183 L 832.929 164.7 L 842.929 164.7" /></g><g class="highcharts-markers highcharts-series-2 highcharts-tracker" style="cursor: pointer;" clip-path="url(&quot;#highcharts-2&quot;)" transform="translate(47 10) scale(1)"><path fill="#ffffff" stroke="#3c9df0" stroke-width="2" d="M 832 160.7 C 837.328 160.7 837.328 168.7 832 168.7 C 826.672 168.7 826.672 160.7 832 160.7 Z" /><path fill="#ffffff" stroke="#3c9df0" stroke-width="2" d="M 704 179 C 709.328 179 709.328 187 704 187 C 698.672 187 698.672 179 704 179 Z" /><path fill="#ffffff" stroke="#3c9df0" stroke-width="2" d="M 576 179 C 581.328 179 581.328 187 576 187 C 570.672 187 570.672 179 576 179 Z" /><path fill="#ffffff" stroke="#3c9df0" stroke-width="2" d="M 448 179 C 453.328 179 453.328 187 448 187 C 442.672 187 442.672 179 448 179 Z" /><path fill="#ffffff" stroke="#3c9df0" stroke-width="2" d="M 320 179 C 325.328 179 325.328 187 320 187 C 314.672 187 314.672 179 320 179 Z" /><path fill="#ffffff" stroke="#3c9df0" stroke-width="3" d="M 192 177 C 199.992 177 199.992 189 192 189 C 184.008 189 184.008 177 192 177 Z" /><path fill="#ffffff" stroke="#3c9df0" stroke-width="2" d="M 64 166.8 C 69.328 166.8 69.328 174.8 64 174.8 C 58.672 174.8 58.672 166.8 64 166.8 Z" /></g><g class="highcharts-series highcharts-series-3" clip-path="url(&quot;#highcharts-1&quot;)" transform="translate(47 10) scale(1)"><path fill="none" stroke="#93c911" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M 64.0714 183 L 192.214 183 L 320.357 183 L 448.5 183 L 576.643 183 L 704.786 183 L 832.929 183" /><path class=" highcharts-tracker" visibility="visible" style="cursor: pointer;" fill="none" stroke="rgba(192, 192, 192, 0.0001)" stroke-linejoin="round" stroke-width="22" d="M 54.0714 183 L 64.0714 183 L 192.214 183 L 320.357 183 L 448.5 183 L 576.643 183 L 704.786 183 L 832.929 183 L 842.929 183" /></g><g class="highcharts-markers highcharts-series-3 highcharts-tracker" style="cursor: pointer;" clip-path="url(&quot;#highcharts-2&quot;)" transform="translate(47 10) scale(1)"><path fill="#ffffff" stroke="#93c911" stroke-width="2" d="M 832 179 C 837.328 179 837.328 187 832 187 C 826.672 187 826.672 179 832 179 Z" /><path fill="#ffffff" stroke="#93c911" stroke-width="2" d="M 704 179 C 709.328 179 709.328 187 704 187 C 698.672 187 698.672 179 704 179 Z" /><path fill="#ffffff" stroke="#93c911" stroke-width="2" d="M 576 179 C 581.328 179 581.328 187 576 187 C 570.672 187 570.672 179 576 179 Z" /><path fill="#ffffff" stroke="#93c911" stroke-width="2" d="M 448 179 C 453.328 179 453.328 187 448 187 C 442.672 187 442.672 179 448 179 Z" /><path fill="#ffffff" stroke="#93c911" stroke-width="2" d="M 320 179 C 325.328 179 325.328 187 320 187 C 314.672 187 314.672 179 320 179 Z" /><path fill="#ffffff" stroke="#93c911" stroke-width="3" d="M 192 177 C 199.992 177 199.992 189 192 189 C 184.008 189 184.008 177 192 177 Z" /><path fill="#ffffff" stroke="#93c911" stroke-width="2" d="M 64 179 C 69.328 179 69.328 187 64 187 C 58.672 187 58.672 179 64 179 Z" /></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels"><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="111.0714" y="213">13일</text><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="239.2143" y="213">14일</text><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="367.3572" y="213">15일</text><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="495.5" y="213">16일</text><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="623.6429" y="213">17일</text><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="751.7857" y="213">18일</text><text style="width: 113px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="879.9286" y="213">19일</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text style="width: 295px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="32" y="198">0</text><text style="width: 295px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="32" y="137">100</text><text style="width: 295px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="32" y="76">200</text><text style="width: 295px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="32" y="15">300</text></g><g class="highcharts-tooltip" visibility="visible" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" opacity="1" transform="translate(72 116)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 148.5 0.5 C 151.5 0.5 151.5 0.5 151.5 3.5 L 151.5 91.5 C 151.5 94.5 151.5 94.5 148.5 94.5 L 3.5 94.5 C 0.5 94.5 0.5 94.5 0.5 91.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 148.5 0.5 C 151.5 0.5 151.5 0.5 151.5 3.5 L 151.5 91.5 C 151.5 94.5 151.5 94.5 148.5 94.5 L 3.5 94.5 C 0.5 94.5 0.5 94.5 0.5 91.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 148.5 0.5 C 151.5 0.5 151.5 0.5 151.5 3.5 L 151.5 91.5 C 151.5 94.5 151.5 94.5 148.5 94.5 L 3.5 94.5 C 0.5 94.5 0.5 94.5 0.5 91.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" stroke="rgba(187, 187, 187, 1)" stroke-width="1" d="M 3.5 0.5 L 148.5 0.5 C 151.5 0.5 151.5 0.5 151.5 3.5 L 151.5 91.5 C 151.5 94.5 151.5 94.5 148.5 94.5 L 3.5 94.5 C 0.5 94.5 0.5 94.5 0.5 91.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"><tspan style="font-weight: bold;">14일</tspan><tspan x="8" dy="15">개인정보 문서생성: 21건</tspan><tspan x="8" dy="15">개인정보 문서수정: 4건</tspan><tspan x="8" dy="15">개인정보 문서변경: 0건</tspan><tspan x="8" dy="15">개인정보 수동검사: 0건</tspan></text></g></svg></div></div>
+				<div class="loading" style="height: 219px; display: none; position: relative;" parent="privacy">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('privacy') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_straight">
+							<span class="color_blue01"></span>
+							<span class="text_title">개인정보 문서생성</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('create'), parent('privacy') =============== -->
+								(총 <span class="color_orange01-1 text" name="added" parent="privacy">488</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('create'), parent('privacy') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_straight">
+							<span class="color_green01"></span>
+							<span class="text_title">개인정보 문서수정</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('modify'), parent('privacy') =============== -->
+								(총 <span class="color_orange01-1 text" name="modified" parent="privacy">355</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('modify'), parent('privacy') =============== -->
+							</span>
+						</li>
+						<li class="info03 float_straight">
+							<span class="color_skyblue01"></span>
+							<span class="text_title">개인정보 문서변경</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('change'), parent('privacy') =============== -->
+								(총 <span class="color_orange01-1 text" name="changed" parent="privacy">50</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('change'), parent('privacy') =============== -->
+							</span>
+						</li>
+						<li class="info04 float_straight">
+							<span class="color_yellowgreen01"></span>
+							<span class="text_title">개인정보 수동검사</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('detail'), parent('privacy') =============== -->
+								(총 <span class="color_orange01-1 text" name="inspection" parent="privacy">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('detail'), parent('privacy') =============== -->
+							</span>
+						</li>
+					</ul>
+					<div class="area_end">
+						<div class="end_info clear_f">
+							<div class="float_right">
+								<span class="text_title">총 파일첨부유출 건수</span><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('privacy') =============== -->
+								<span class="text_value"><span class="color_orange01-1 text" name="total" parent="privacy">893</span> 건</span><!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('privacy') =============== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 03 :: 개인정보 검출현황 -->
+	
+		<!-- 04 :: 소프트웨어 실행현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('software') =============== -->
+	<div class="layout_card layout_card_2left card" name="software">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('software') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">소프트웨어 실행현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/enviroment/log/softwareuse">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 관련 추가 정보 -->
+				<div class="graph_info_text clear_f">
+					<!-- 오피스키퍼 버전에서는 밑에 2개의 span 태그를 삭제 -->
+									</div>
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('software') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="donut" parent="software" data-highcharts-chart="2"><div class="highcharts-container" id="highcharts-6" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-7"><rect x="0" y="0" width="432" height="191" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#1f8c13" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 215.982 8 A 87.5 87.5 0 1 1 139.363 137.725 L 180.966 114.803 A 40 40 0 1 0 215.992 55.5 Z" /><path fill="#93c911" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 139.321 137.649 A 87.5 87.5 0 0 1 142.071 48.6949 L 182.204 74.1034 A 40 40 0 0 0 180.947 114.768 Z" /><path fill="#3c9df0" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 142.118 48.621 A 87.5 87.5 0 0 1 148.539 39.7755 L 185.161 70.0259 A 40 40 0 0 0 182.225 74.0696 Z" /><path fill="#0059a6" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 148.594 39.7081 A 87.5 87.5 0 0 1 215.878 8.00008 L 215.944 55.5 A 40 40 0 0 0 185.186 69.9951 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-tooltip" visibility="visible" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" opacity="0" transform="translate(200 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 108.5 0.5 C 111.5 0.5 111.5 0.5 111.5 3.5 L 111.5 31.5 C 111.5 34.5 111.5 34.5 108.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 108.5 0.5 C 111.5 0.5 111.5 0.5 111.5 3.5 L 111.5 31.5 C 111.5 34.5 111.5 34.5 108.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 108.5 0.5 C 111.5 0.5 111.5 0.5 111.5 3.5 L 111.5 31.5 C 111.5 34.5 111.5 34.5 108.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" stroke="rgba(187, 187, 187, 1)" stroke-width="1" d="M 3.5 0.5 L 108.5 0.5 C 111.5 0.5 111.5 0.5 111.5 3.5 L 111.5 31.5 C 111.5 34.5 111.5 34.5 108.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"><tspan>웹브라우저 : 67%</tspan></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" parent="software">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('software') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_blue01"></span>
+							<span class="text_title">메신저</span>
+							<span class="text_value"><!--
+								 --><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data1'), parent('software') =============== -->
+								(총 <span class="color_orange01-1 text" name="data2_hour" parent="software">56</span>시간 <span class="color_orange01-1 text" name="data2_minute" parent="software">20</span>분)<!--
+								 --><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data1'), parent('software') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_skyblue01"></span>
+							<span class="text_title">동영상 플레이어</span>
+							<span class="text_value"><!--
+								 --><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data2'), parent('software') =============== -->
+								(총 <span class="color_orange01-1 text" name="data5_hour" parent="software">9</span>시간 <span class="color_orange01-1 text" name="data5_minute" parent="software">22</span>분)<!--
+								 --><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data2'), parent('software') =============== -->
+							</span>
+						</li>
+						<li class="info03 float_left">
+							<span class="color_yellowgreen01"></span>
+							<span class="text_title">오피스 제품군</span>
+							<span class="text_value"><!--
+								 --><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data3'), parent('software') =============== -->
+								(총 <span class="color_orange01-1 text" name="data8_hour" parent="software">70</span>시간 <span class="color_orange01-1 text" name="data8_minute" parent="software">55</span>분)<!--
+								 --><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data3'), parent('software') =============== -->
+							</span>
+						</li>
+						<li class="info04 float_right">
+							<span class="color_green01"></span>
+							<span class="text_title">웹브라우저</span>
+							<span class="text_value"><!--
+								 --><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data4'), parent('software') =============== -->
+								(총 <span class="color_orange01-1 text" name="data100_hour" parent="software">278</span>시간 <span class="color_orange01-1 text" name="data100_minute" parent="software">3</span>분)<!--
+								 --><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('data4'), parent('software') =============== -->
+							</span>
+						</li>
+						<li class="info00 float_left"></li>
+						<li class="info00 float_right"></li>
+						<li class="info00 float_left"></li>
+						<li class="info00 float_right"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //04 :: 소프트웨어 실행현황 -->
+	
+	<!-- 05 :: 웹사이트 접속현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('site') =============== -->
+	<div class="layout_card layout_card_2right card" name="site">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('site') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">웹사이트 접속현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/enviroment/log/internetuse">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 관련 추가 정보 -->
+				<div class="graph_info_text clear_f">
+					<span class="icn_graph_info"></span><span class="info_text">인터넷사이트 활용시간은 웹브라우저를 최상위로 활성화한 시간입니다.</span>
+				</div>
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('site') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="donut" parent="site" data-highcharts-chart="4"><div class="highcharts-container" id="highcharts-10" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-11"><rect x="0" y="0" width="432" height="191" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#0e620a" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 215.982 8 A 87.5 87.5 0 0 1 275.822 31.6443 L 243.347 66.3088 A 40 40 0 0 0 215.992 55.5 Z" /><path fill="#1f8c13" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 275.886 31.7041 A 87.5 87.5 0 0 1 297.387 127.63 L 253.206 110.188 A 40 40 0 0 0 243.376 66.3362 Z" /><path fill="#93c911" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 297.355 127.712 A 87.5 87.5 0 0 1 160.289 162.973 L 190.532 126.345 A 40 40 0 0 0 253.191 110.225 Z" /><path fill="#c8dc1d" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 160.222 162.917 A 87.5 87.5 0 0 1 160.289 162.973 L 190.532 126.345 A 40 40 0 0 0 190.501 126.319 Z" /><path fill="#8ec9fc" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 160.222 162.917 A 87.5 87.5 0 0 1 156.152 159.331 L 188.641 124.68 A 40 40 0 0 0 190.501 126.319 Z" /><path fill="#3c9df0" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 156.088 159.271 A 87.5 87.5 0 0 1 142.173 142.467 L 182.251 116.97 A 40 40 0 0 0 188.612 124.653 Z" /><path fill="#0059a6" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 142.126 142.393 A 87.5 87.5 0 0 1 169.049 21.6636 L 194.536 61.7462 A 40 40 0 0 0 182.229 116.937 Z" /><path fill="#0a375f" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 169.122 21.6167 A 87.5 87.5 0 0 1 215.878 8.00008 L 215.944 55.5 A 40 40 0 0 0 194.57 61.7248 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-tooltip" visibility="visible" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" opacity="0" transform="translate(134 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 72.5 0.5 C 75.5 0.5 75.5 0.5 75.5 3.5 L 75.5 31.5 C 75.5 34.5 75.5 34.5 72.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 72.5 0.5 C 75.5 0.5 75.5 0.5 75.5 3.5 L 75.5 31.5 C 75.5 34.5 75.5 34.5 72.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 72.5 0.5 C 75.5 0.5 75.5 0.5 75.5 3.5 L 75.5 31.5 C 75.5 34.5 75.5 34.5 72.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" stroke="rgba(187, 187, 187, 1)" stroke-width="1" d="M 3.5 0.5 L 72.5 0.5 C 75.5 0.5 75.5 0.5 75.5 3.5 L 75.5 31.5 C 75.5 34.5 75.5 34.5 72.5 34.5 L 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"><tspan>쇼핑 : 25%</tspan></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" name="pie" parent="site">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('site') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_blue00"></span>
+							<span class="text_title">웹메일</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('webmail/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data1_hour" parent="site">3</span>시간 <span class="color_orange01-1 text" name="data1_minute" parent="site">30</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('webmail/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_blue01"></span>
+							<span class="text_title">쇼핑</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('shopping/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data2_hour" parent="site">9</span>시간 <span class="color_orange01-1 text" name="data2_minute" parent="site">20</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('shopping/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info03 float_left">
+							<span class="color_blue02"></span>
+							<span class="text_title">증권</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('stock/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data3_hour" parent="site">1</span>시간 <span class="color_orange01-1 text" name="data3_minute" parent="site">24</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('stock/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info04 float_right">
+							<span class="color_blue03"></span>
+							<span class="text_title">취업</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('employment/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data4_hour" parent="site">0</span>시간 <span class="color_orange01-1 text" name="data4_minute" parent="site">28</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('employment/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info05 float_left">
+							<span class="color_yellowgreen00"></span>
+							<span class="text_title">게임</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('game/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data5_hour" parent="site">0</span>시간 <span class="color_orange01-1 text" name="data5_minute" parent="site">0</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('game/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info06 float_right">
+							<span class="color_yellowgreen01"></span>
+							<span class="text_title">엔터테인먼트</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('entertainment/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data6_hour" parent="site">11</span>시간 <span class="color_orange01-1 text" name="data6_minute" parent="site">10</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('entertainment/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info07 float_left">
+							<span class="color_yellowgreen02"></span>
+							<span class="text_title">뉴스</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('news/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data7_hour" parent="site">7</span>시간 <span class="color_orange01-1 text" name="data7_minute" parent="site">10</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('news/'), parent('site') =============== -->
+							</span>
+						</li>
+						<li class="info08 float_right">
+							<span class="color_yellowgreen03"></span>
+							<span class="text_title">SNS</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('sns/'), parent('site') =============== -->
+								(총 <span class="color_orange01-1 text" name="data8_hour" parent="site">4</span>시간 <span class="color_orange01-1 text" name="data8_minute" parent="site">0</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('sns/'), parent('site') =============== -->
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 05 :: 웹사이트 접속현황 -->
+	
+	<!-- 06 :: 소프트웨어 실행 차단현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('software_block') =============== -->
+	<div class="layout_card layout_card_2left card" name="software_block">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('software_block') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">소프트웨어 실행 차단현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/enviroment/log/softwareblock">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('software_block') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="bar" parent="software_block" data-highcharts-chart="3"><div class="highcharts-container" id="highcharts-8" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-9"><rect x="0" y="0" width="410" height="180" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-grid" /><g class="highcharts-grid"><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 32 100.5 L 442 100.5" /></g><g class="highcharts-axis"><path fill="none" stroke="#c0d0e0" stroke-width="1" d="M 32 190.5 L 442 190.5" /></g><g class="highcharts-axis" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" clip-path="url(&quot;#highcharts-9&quot;)" transform="translate(32 10) scale(1)"><rect fill="#0059a6" x="15" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="74" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="133" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="191" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="250" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="308" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="367" y="91" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-0" clip-path="none" transform="translate(32 10) scale(1)" /><g class="highcharts-series highcharts-series-1 highcharts-tracker" clip-path="url(&quot;#highcharts-9&quot;)" transform="translate(32 10) scale(1)"><rect fill="#1f8c13" x="33" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="92" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="150" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="209" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="267" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="326" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="385" y="91" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-1" clip-path="none" transform="translate(32 10) scale(1)" /></g><text class="highcharts-title" style="width: 388px; color: rgb(51, 51, 51); font-size: 18px; display: none; fill: #333333;" text-anchor="middle" x="226" y="24"><tspan>Chart title</tspan></text><g class="highcharts-axis-labels highcharts-xaxis-labels"><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="61.2857" y="210">13일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="119.8571" y="210">14일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="178.4286" y="210">15일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="237" y="210">16일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="295.5715" y="210">17일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="354.1429" y="210">18일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="412.7143" y="210">19일</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="17" y="105">0</text></g><g class="highcharts-tooltip" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" transform="translate(0 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" parent="software_block">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('software_block') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_blue01"></span>
+							<span class="text_title">소프트웨어 실행 경고</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('warn'), parent('software_block') =============== -->
+								(총 <span class="color_orange01-1 text" name="warn" parent="software_block">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('warn'), parent('software_block') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_green01"></span>
+							<span class="text_title">소프트웨어 실행 차단</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('block'), parent('software_block') =============== -->
+								(총 <span class="color_orange01-1 text" name="block" parent="software_block">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('block'), parent('software_block') =============== -->
+							</span>
+						</li>
+					</ul>
+					<div class="area_end">
+						<div class="end_info clear_f">
+							<div class="float_right">
+								<span class="text_title">총 소프트웨어 실행 경고/차단 건수</span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('software_block') =============== -->
+								<span class="text_value"><span class="color_orange01 text" name="total" parent="software_block">0</span> 건</span>
+								<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('software_block') =============== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //06 :: 소프트웨어 실행 차단현황 -->
+	
+	<!-- 07 :: 웹사이트 접속 차단현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('site_block') =============== -->
+	<div class="layout_card layout_card_2right card" name="site_block">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('site_block') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">웹사이트 접속 차단현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/enviroment/log/internetblock">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('site_block') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="bar" parent="site_block" data-highcharts-chart="6"><div class="highcharts-container" id="highcharts-14" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-15"><rect x="0" y="0" width="410" height="180" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-grid" /><g class="highcharts-grid"><path opacity="1" fill="none" stroke="#d8d8d8" stroke-width="1" d="M 32 100.5 L 442 100.5" /></g><g class="highcharts-axis"><path fill="none" stroke="#c0d0e0" stroke-width="1" d="M 32 190.5 L 442 190.5" /></g><g class="highcharts-axis" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" clip-path="url(&quot;#highcharts-15&quot;)" transform="translate(32 10) scale(1)"><rect fill="#0059a6" x="15" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="74" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="133" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="191" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="250" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="308" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#0059a6" x="367" y="91" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-0" clip-path="none" transform="translate(32 10) scale(1)" /><g class="highcharts-series highcharts-series-1 highcharts-tracker" clip-path="url(&quot;#highcharts-15&quot;)" transform="translate(32 10) scale(1)"><rect fill="#1f8c13" x="33" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="92" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="150" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="209" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="267" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="326" y="91" width="10" height="0" rx="0" ry="0" /><rect fill="#1f8c13" x="385" y="91" width="10" height="0" rx="0" ry="0" /></g><g class="highcharts-markers highcharts-series-1" clip-path="none" transform="translate(32 10) scale(1)" /></g><text class="highcharts-title" style="width: 388px; color: rgb(51, 51, 51); font-size: 18px; display: none; fill: #333333;" text-anchor="middle" x="226" y="24"><tspan>Chart title</tspan></text><g class="highcharts-axis-labels highcharts-xaxis-labels"><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="61.2857" y="210">13일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="119.8571" y="210">14일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="178.4286" y="210">15일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="237" y="210">16일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="295.5715" y="210">17일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="354.1429" y="210">18일</text><text style="color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; fill: #0059a6;" opacity="1" text-anchor="middle" transform="translate(0)" x="412.7143" y="210">19일</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text style="width: 129px; color: rgb(0, 89, 166); font-family: &quot;NanumBarunGothic&quot;,NanumBarunGothic,&quot;나눔바른고딕&quot;,&quot;NanumGothic&quot;,NanumGothic,&quot;나눔고딕&quot;,&quot;Malgun Gothic&quot;,&quot;맑은 고딕&quot;,&quot;돋움&quot;,Dotum,&quot;굴림&quot;,Gulim,Helvetica,sans-serif; font-size: 12px; font-weight: bold; cursor: default; -ms-text-overflow: clip; fill: #0059a6;" opacity="1" text-anchor="end" transform="translate(0)" x="17" y="105">0</text></g><g class="highcharts-tooltip" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" transform="translate(0 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" parent="site_block">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('site_block') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_blue01"></span>
+							<span class="text_title">웹사이트 접속 경고</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('warn'), parent('site_block') =============== -->
+								(총 <span class="color_orange01-1 text" name="warn" parent="site_block">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('warn'), parent('site_block') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_green01"></span>
+							<span class="text_title">웹사이트 접속 차단</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('block'), parent('site_block') =============== -->
+								(총 <span class="color_orange01-1 text" name="block" parent="site_block">0</span>건)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('block'), parent('site_block') =============== -->
+							</span>
+						</li>
+					</ul>
+					<div class="area_end">
+						<div class="end_info clear_f">
+							<div class="float_right">
+								<span class="text_title">총 웹사이트 접속 경고/차단 건수</span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('site_block') =============== -->
+								<span class="text_value"><span class="color_orange01 text" name="total" parent="site_block">0</span> 건</span>
+								<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('site_block') =============== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 07 :: 웹사이트 접속 차단현황 -->
+	
+	<!-- 08 :: 취업사이트 접속현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('human_jobsite') =============== -->
+	<div class="layout_card layout_card_3left card" name="human_jobsite">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('human_jobsite') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">취업사이트 접속현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/human/log/jobsite">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 - :가로 284px -->
+				<div class="view_graph_donut content" parent="human_jobsite">
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('human_jobsite') =============== -->
+					<div class="chart_donut graph" style="height: 152px;" name="donut" parent="human_jobsite" data-highcharts-chart="8"><div class="highcharts-container" id="highcharts-18" style="width: 150px; height: 152px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="150" height="152" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-19"><rect x="0" y="0" width="130" height="127" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="150" height="152" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#dddddd" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 64.9863 -4 A 67.5 67.5 0 1 1 56.4914 -3.46159 L 59.3276 18.8589 A 45 45 0 1 0 64.9908 18.5 Z" /><path fill="#ff6600" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 56.5584 -3.47006 A 67.5 67.5 0 0 1 64.9062 -3.99993 L 64.9375 18.5 A 45 45 0 0 0 59.3723 18.8533 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" opacity="1" transform="translate(10 10) scale(1)" /></svg></div></div>
+					<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('human_jobsite') =============== -->
+					<div class="text_chart">
+						<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('human_jobsite'), parent('human_jobsite') =============== -->
+						<span class="text_value color_orange01 text" name="human_jobsite" parent="human_jobsite">6명</span>
+						<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('human_jobsite'), parent('human_jobsite') =============== -->
+						<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('human_jobsite') =============== -->
+						<span class="text_allvalue color_gray01 text" name="total" parent="human_jobsite">396명</span>
+						<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('human_jobsite') =============== -->
+					</div>
+				</div>
+				<div class="loading" style="height: 152px; display: none; position: relative;" parent="human_jobsite">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- //그래프 들어가는 곳 -->
+			</div>
+		</div>
+	</div>
+	<!-- //08 :: 취업사이트 접속현황 -->
+	
+	<!-- 09 :: 웹 검색 현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('human_websearch') =============== -->
+	<div class="layout_card layout_card_3center card" name="human_websearch">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('human_websearch') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">금칙어 웹 검색 현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/human/log/forbiddenwordinternet">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 - :가로 284px -->
+				<div class="view_graph_donut content" parent="human_websearch">
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('human_websearch') =============== -->
+					<div class="chart_donut graph" style="height: 152px;" name="donut" parent="human_websearch" data-highcharts-chart="7"><div class="highcharts-container" id="highcharts-16" style="width: 150px; height: 152px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="150" height="152" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-17"><rect x="0" y="0" width="130" height="127" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="150" height="152" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#dddddd" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 64.9863 -4 A 67.5 67.5 0 1 1 60.7241 -3.86443 L 62.1494 18.5904 A 45 45 0 1 0 64.9908 18.5 Z" /><path fill="#ff6600" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 60.7915 -3.86867 A 67.5 67.5 0 0 1 64.9062 -3.99993 L 64.9375 18.5 A 45 45 0 0 0 62.1943 18.5876 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" opacity="1" transform="translate(10 10) scale(1)" /></svg></div></div>
+					<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('human_websearch') =============== -->
+					<div class="text_chart">
+						<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('human_websearch'), parent('human_websearch') =============== -->
+						<span class="text_value color_orange01 text" name="human_websearch" parent="human_websearch">3명</span>
+						<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('human_websearch'), parent('human_websearch') =============== -->
+						<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('human_websearch') =============== -->
+						<span class="text_allvalue color_gray01 text" name="total" parent="human_websearch">396명</span>
+						<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('human_websearch') =============== -->
+					</div>
+				</div>
+				<div class="loading" style="height: 152px; display: none; position: relative;" parent="human_websearch">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- //그래프 들어가는 곳 -->
+			</div>
+		</div>
+	</div>
+	<!--// 09 :: 웹 검색 현황 -->
+	
+	<!-- 10 :: 문서활용 현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('human_document') =============== -->
+	<div class="layout_card layout_card_3right card" name="human_document">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('human_document') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">금칙어 문서활용 현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/human/log/forbiddenworddocument">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 - :가로 284px -->
+				<div class="view_graph_donut content" parent="human_document">
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('human_document') =============== -->
+					<div class="chart_donut graph" style="height: 152px;" name="donut" parent="human_document" data-highcharts-chart="10"><div class="highcharts-container" id="highcharts-22" style="width: 150px; height: 152px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="150" height="152" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-23"><rect x="0" y="0" width="130" height="127" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="150" height="152" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#dddddd" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 64.9863 -4 A 67.5 67.5 0 1 1 40.0639 0.774883 L 48.3759 21.6833 A 45 45 0 1 0 64.9908 18.5 Z" /><path fill="#ff6600" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 40.1266 0.749978 A 67.5 67.5 0 0 1 64.9062 -3.99993 L 64.9375 18.5 A 45 45 0 0 0 48.4178 21.6667 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" opacity="1" transform="translate(10 10) scale(1)" /></svg></div></div>
+					<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('human_document') =============== -->
+					<div class="text_chart">
+						<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('human_document'), parent('human_document') =============== -->
+						<span class="text_value color_orange01 text" name="human_document" parent="human_document">23명</span>
+						<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('human_document'), parent('human_document') =============== -->
+						<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('human_document') =============== -->
+						<span class="text_allvalue color_gray01 text" name="total" parent="human_document">396명</span>
+						<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('human_document') =============== -->
+					</div>
+				</div>
+				<div class="loading" style="height: 152px; display: none; position: relative;" parent="human_document">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- //그래프 들어가는 곳 -->
+			</div>
+		</div>
+	</div>
+	<!-- //10 :: 문서활용 내역 -->
+	
+	<!-- 11 :: 소프트웨어 라이선스 관리현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('software_license') =============== -->
+	<div class="layout_card layout_card_2left card" name="software_license">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('software_license') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">소프트웨어 라이선스 관리현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/asset/log/softwarelicense">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<div class="view_graph_bar content" parent="software_license">
+					<!-- 01_01 -->
+					<div class="area_title">
+						<span class="text_title">라이선스관리대상 소프트웨어</span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('software_manage'), parent('software_license') =============== -->
+							(총 <span class="color_orange01 text" name="software_manage" parent="software_license">2136</span>건)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('software_manage'), parent('software_license') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('software_manage'), parent('software_license') =============== -->
+								<span class="bar_g color_yellowgreen01 percent" style="width: 100%;" name="software_manage" parent="software_license"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('software_manage'), parent('software_license') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //01_01 -->
+					<!-- 01_02 -->
+					<div class="area_title">
+						<span class="text_title">라이선스 초과 소프트웨어</span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('software_license_over'), parent('software_license') =============== -->
+							(총 <span class="color_orange01 text" name="software_license_over" parent="software_license">93</span>건)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('software_license_over'), parent('software_license') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('software_license_over'), parent('software_license') =============== -->
+								<span class="bar_g color_yellow01 percent" style="width: 4%;" name="software_license_over" parent="software_license"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('software_license_over'), parent('software_license') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //01_02 -->
+					<!-- 01_03 -->
+					<div class="area_title">
+						<span class="text_title">소프트웨어 삭제 권고 </span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('software_delete_in'), parent('software_license') =============== -->
+							(총 <span class="color_orange01 text" name="software_delete_in" parent="software_license">0</span>건)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('software_delete_in'), parent('software_license') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('software_delete_in'), parent('software_license') =============== -->
+								<span class="bar_g color_orange01 percent" style="width: 0%;" name="software_delete_in" parent="software_license"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('software_delete_in'), parent('software_license') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //01_03 -->
+				</div>
+				<div class="loading" style="height: 150px; display: none; position: relative;" parent="software_license">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- //그래프 들어가는 곳 -->
+			</div>
+		</div>
+	</div>
+	<!-- //11 :: 소프트웨어 라이선스 관리현황 -->
+	
+	<!-- 12 :: 컴퓨터 보안현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('comoputer_security') =============== -->
+	<div class="layout_card layout_card_2right card" name="comoputer_security">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('comoputer_security') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">컴퓨터 보안현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/asset/log/computersecurity">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<div class="view_graph_bar content" parent="comoputer_security">
+					<!-- 03_01 -->
+					<div class="area_title">
+						<span class="text_title">방화벽 미사용</span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('firewall'), parent('comoputer_security') =============== -->
+							(총 <span class="color_orange01 text" name="firewall" parent="comoputer_security">61</span>대)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('firewall'), parent('comoputer_security') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('firewall'), parent('comoputer_security') =============== -->
+								<span class="bar_g color_yellow01 percent" style="width: 15%;" name="firewall" parent="comoputer_security"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('firewall'), parent('comoputer_security') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //03_01 -->
+					<!-- 03_02 -->
+					<div class="area_title">
+						<span class="text_title">자동업데이트 미사용</span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('autoupdate'), parent('comoputer_security') =============== -->
+							(총 <span class="color_orange01 text" name="autoupdate" parent="comoputer_security">13</span>대)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('autoupdate'), parent('comoputer_security') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('autoupdate'), parent('comoputer_security') =============== -->
+								<span class="bar_g color_yellow01 percent" style="width: 3%;" name="autoupdate" parent="comoputer_security"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('autoupdate'), parent('comoputer_security') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //03_02 -->
+					<!-- 03_03 -->
+					<div class="area_title">
+						<span class="text_title">바이러스 백신 미설치</span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('vaccine'), parent('comoputer_security') =============== -->
+							(총 <span class="color_orange01 text" name="vaccine" parent="comoputer_security">15</span>대)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('vaccine'), parent('comoputer_security') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('vaccine'), parent('comoputer_security') =============== -->
+								<span class="bar_g color_orange01 percent" style="width: 4%;" name="vaccine" parent="comoputer_security"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('vaccine'), parent('comoputer_security') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //01_03 -->
+				</div>
+				<div class="loading" style="height: 150px; display: none; position: relative;" parent="comoputer_security">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- //그래프 들어가는 곳 -->
+			</div>
+		</div>
+	</div>
+	<!-- //12 :: 컴퓨터 보안현황 -->
+	
+	<!-- 13 ::  컴퓨터 활용현황-->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('computer') =============== -->
+	<div class="layout_card layout_card_2left card" name="computer">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('computer') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">컴퓨터 활용현황</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+				<span class="text_small_title text" name="period">( 2016-09-13 ~ 2016-09-19 )</span>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('period') =============== -->
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/asset/log/computeruse">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('computer') =============== -->
+				<div class="view_graph graph content" style="height: 216px;" name="donut" parent="computer" data-highcharts-chart="9"><div class="highcharts-container" id="highcharts-20" style="width: 452px; height: 216px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="452" height="216" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-21"><rect x="0" y="0" width="432" height="191" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="452" height="216" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#93c911" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 215.982 8 A 87.5 87.5 0 0 1 299.195 68.3911 L 254.032 83.1073 A 40 40 0 0 0 215.992 55.5 Z" /><path fill="#ffba00" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 299.222 68.4743 A 87.5 87.5 0 1 1 215.878 8.00008 L 215.944 55.5 A 40 40 0 1 0 254.044 83.1454 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-tooltip" style="padding: 0px; white-space: nowrap; cursor: default; pointer-events: none;" transform="translate(0 -9999)"><path fill="none" stroke="black" stroke-opacity="0.05" stroke-width="5" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.1" stroke-width="3" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="none" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1 1)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" /><path fill="rgba(249, 249, 249, 0.85)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" /><text style="color: rgb(51, 51, 51); font-size: 12px; fill: #333333;" x="8" y="20"></text></g></svg></div></div>
+				<div class="loading" style="height: 216px; display: none; position: relative;" parent="computer">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('computer') =============== -->
+				<!-- //그래프 들어가는 곳 -->
+				<div class="info_graph_type01">
+					<ul class="clear_f">
+						<li class="info01 float_left">
+							<span class="color_yellowgreen01"></span>
+							<span class="text_title">활용 시간</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('use'), parent('computer') =============== -->
+								(총 <span class="color_orange01-1 text" name="use_hour" parent="computer">2307</span>시간 <span class="color_orange01-1 text" name="use_minute" parent="computer">41</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('use'), parent('computer') =============== -->
+							</span>
+						</li>
+						<li class="info02 float_right">
+							<span class="color_yellow01"></span>
+							<span class="text_title">비활용 시간</span>
+							<span class="text_value"><!--
+								--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('nouse'), parent('computer') =============== -->
+								(총 <span class="color_orange01-1 text" name="nouse_hour" parent="computer">9513</span>시간 <span class="color_orange01-1 text" name="nouse_minute" parent="computer">23</span>분)<!--
+								--><!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('nouse'), parent('computer') =============== -->
+							</span>
+						</li>
+					</ul>
+					<div class="area_end">
+						<div class="end_info clear_f">
+							<div class="float_right">
+								<span class="text_title">총 컴퓨터 동작시간</span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('computer') =============== -->
+								<span class="text_value"><span class="color_orange01 text" name="total_hour" parent="computer">11821</span>시간 <span class="color_orange01 text" name="total_minute" parent="computer">5</span>분</span>
+								<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('total'), parent('computer') =============== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //13 ::  컴퓨터 활용현황-->
+	
+	<!-- 14 :: 컴퓨터 반출현황-->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('comoputer_security') =============== -->
+	<div class="layout_card layout_card_2right card" name="comoputer_out">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('comoputer_security') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">컴퓨터 반출현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/asset/log/computerlocate">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph">
+				<!-- 그래프 들어가는 곳 -->
+				<div class="view_graph_bar content" parent="comoputer_out">
+					<!-- 03_01 -->
+					<div class="area_title">
+						<span class="text_title">반출</span>
+						<span class="text_value"><!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('out'), parent('comoputer_out') =============== -->
+							(총 <span class="color_orange01 text" name="out" parent="comoputer_out">335</span>대)<!--
+							--><!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('text'), name('firewall'), parent('comoputer_out') =============== -->
+						</span>
+					</div>
+					<div class="graph_type_bar">
+						<div class="bg_graph">
+							<span class="graph_g">
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('firewall'), parent('comoputer_out') =============== -->
+								<span class="bar_g color_orange01 percent" style="width: 85%;" name="out" parent="comoputer_out"></span>
+								<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('percent'), name('firewall'), parent('comoputer_out') =============== -->
+							</span>
+						</div>
+					</div>
+					<!-- //03_01 -->
+				</div>
+				<div class="loading" style="height: 63px; display: none; position: relative;" parent="comoputer_out">
+					<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+				</div>
+				<!-- //그래프 들어가는 곳 -->
+			</div>
+		</div>
+	</div>
+	<!-- //14 :: 컴퓨터 반출현황-->
+	<!-- 15 :: 하드웨어 현황 -->
+	<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('comoputer_security') =============== -->
+	<div class="layout_card layout_card_2right card" name="comoputer_out">
+	<!-- =============== (END) DEVELOPER : 기능동작에 필요한 속성값 추가 class('card'), name('comoputer_security') =============== -->
+		<div class="area_head headcolor_blue">
+			<h4>
+				<span class="text_title">하드웨어 현황</span>
+			</h4>
+			<div class="btn_detail">
+				<a class="btn_small btncolor_skyblue_line" onclick="set_init({setbox_department: true, setbox: 'Setbox2', name: 'setbox1'})" href="/pc/asset/log/hardware">상세</a>
+			</div>
+		</div>
+		<div class="area_content">
+			<div class="con_graph multi_col two_col border_right">
+				<div class="graph_cont_type01">	
+					<div>		
+						<span class="text_title font_bold">컴퓨터</span>
+						<span class="text_value float_right">(총 <span class="bar_g color_orange01-1 text" name="total" parent="hardware_computer">396</span>대)</span>
+					</div>
+					<div>
+					<!-- 그래프 들어가는 곳 -->
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('computer') =============== -->
+					<div class="view_graph graph content" style="height: 112px; margin-top: 10px;" name="donut" parent="hardware_computer" data-highcharts-chart="11"><div class="highcharts-container" id="highcharts-24" style="width: 177px; height: 112px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="177" height="112" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-25"><rect x="0" y="0" width="157" height="87" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="177" height="112" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#dddddd" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 78.4893 -9 A 52.5 52.5 0 1 1 42.5911 81.7988 L 54.5607 69.0325 A 35 35 0 1 0 78.4929 8.5 Z" /><path fill="#0059a6" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 42.5528 81.7629 A 52.5 52.5 0 0 1 78.4271 -8.99995 L 78.4514 8.50003 A 35 35 0 0 0 54.5352 69.0086 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" opacity="1" transform="translate(10 10) scale(1)" /></svg></div></div>
+					<div class="content graph_icn_display icn_pc" style="left: 90px; top: 102px; position: absolute;" parent="hardware_computer"></div>
+					<div class="loading" style="height: 122px; display: none; position: relative;" parent="hardware_computer">
+						<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+					</div>
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('computer') =============== -->
+					<!-- //그래프 들어가는 곳 -->
+					</div>
+				</div>
+			</div><!--
+		 --><div class="con_graph multi_col two_col">
+				<div class="graph_cont_type01">
+					<div>		
+						<span class="text_title font_bold">모니터</span>
+						<span class="text_value float_right">(총 <span class="bar_g color_orange01-1 text" name="total" parent="hardware_monitor">634</span>대)</span>
+					</div>
+					<div>
+					<!-- 그래프 들어가는 곳 -->
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('computer') =============== -->
+					<div class="view_graph graph content" style="height: 112px; margin-top: 10px;" name="donut" parent="hardware_monitor" data-highcharts-chart="12"><div class="highcharts-container" id="highcharts-26" style="width: 178px; height: 112px; text-align: left; line-height: normal; overflow: hidden; position: relative; z-index: 0;"><svg xmlns="http://www.w3.org/2000/svg" style="font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px;" width="178" height="112" version="1.1"><desc>Created with Highcharts 4.2.5</desc><defs><clipPath id="highcharts-27"><rect x="0" y="0" width="158" height="87" /></clipPath></defs><rect class=" highcharts-background" fill="#ffffff" x="0" y="0" width="178" height="112" /><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10 10) scale(1)"><path fill="#0059a6" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 78.9893 -9 A 52.5 52.5 0 1 1 43.0911 81.7988 L 55.0607 69.0325 A 35 35 0 1 0 78.9929 8.5 Z" /><path fill="#dddddd" stroke="#ffffff" stroke-linejoin="round" stroke-width="0.5" transform="translate(0)" d="M 43.0528 81.7629 A 52.5 52.5 0 0 1 78.9271 -8.99995 L 78.9514 8.50003 A 35 35 0 0 0 55.0352 69.0086 Z" /></g><g class="highcharts-markers highcharts-series-0" transform="translate(10 10) scale(1)" /></g><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" opacity="1" transform="translate(10 10) scale(1)" /></svg></div></div>
+					<div class="content graph_icn_display icn_monitor" style="left: 330px; top: 102px; position: absolute;" parent="hardware_monitor"></div>
+					<div class="loading" style="height: 122px; display: none; position: relative;" parent="hardware_monitor">
+						<img style="margin: auto; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;" src="/images/developer/animation_loading_card.gif">
+					</div>
+					<!-- =============== (START) DEVELOPER : 기능동작에 필요한 속성값 추가 class('graph'), name('computer') =============== -->
+					<!-- //그래프 들어가는 곳 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //15 :: 하드웨어 현황-->
+		<!-- //card layout area -->
+</div>
+<!-- //card contents -->
+				
+					<!-- Footer -->
+					<!-- (1) /views/common/frame/main_footer.php -->
+					
+	<!-- footer -->
+	<div class="wrap_footer">
+		<div class="footer">
+			<div class="copyrights">
+				<!-- =============== (START) DEVELOPER :: 서비스별 분기 =============== -->
+								ⓒ OFFICEKEEPER | Copyrights Jiransoft. All rights reserved.
+								<!-- =============== (END) DEVELOPER :: 서비스별 분기 =============== -->
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->	
+					<!-- Notice Popup -->
+					<div class="config_popup alert_popup alert_yesno hide" name="alert1">
+	<ul class="content_wrapper">
+		<!-- 팝업 상단 -->
+		<li class="alert_top">
+			<h3 class="font_bold">알림메시지</h3>
+		</li>
+		<!-- 팝업 중간 -->
+		<li class="alert_middle">
+			<ul class="middle_wrapper">
+				<!-- 아이콘 -->
+				<li class="s_icn hide">
+					<img src="/images/common/icn_alert_warning.png">
+				</li>
+				<!-- 메인 텍스트 -->
+				<li class="s_main_text">
+					<p>
+						'전체 설정'을 사용하시면 '카테고리 설정' 정책은
+						적용되지 않습니다. 차단/경고/허용을 원하시는 사이트는
+						'개별 설정'을 통해서 설정해 주세요.
+					</p>
+				</li>
+				<!-- 추가 문구 -->
+				<li class="s_add_text font_bold">
+					<!-- 추가문구가 안 들어갈 경우 밑의 h4 태그를 지워주세요 -->
+					<h4>'전체 설정'을 사용하시겠습니까?</h4>
+				</li>
+			</ul>
+		</li>
+		<!-- 팝업 하단 -->
+		<li class="alert_bottom bottom">
+			<div class="btn_wrapper">
+				<button class="ok btn_small btncolor_blue_no_sdw" type="submit">확인</button>
+				<button class="cancel btn_small btncolor_white" type="submit">취소</button>
+			</div>
+		</li>
+	</ul>
+</div>					
+					<!-- Notice Popup( 서비스 전체 모아보기 ) -->
+					
+<!-- 알림메시지 : 서비스 전체 모아보기 -->
+<div class="config_popup alert_popup alert_yes alert_w500 alert_mh500 custom_service_overview custom_service_overview_ok hide" style="top: 400px;" name="alert6">
+	<ul class="content_wrapper">
+		<!-- 팝업 상단 -->	
+		<li class="alert_top">
+			<div class="custom_service_overview_logo_ok">
+				
+			</div>
+			<h4 class="font_bold">중소기업 정보유출방지 통합PC보안 솔루션</h4>
+			<h3 class="font_bold"></h3>
+		</li>
+		<!-- 팝업 중간 -->
+		<li class="alert_middle">
+			<ul class="middle_wrapper">
+				<li class="s_icn">
+				</li>
+				<li class="s_main_headline">
+					<h3 class="font_bold text_align_center">서비스 전체 모아보기</h3>
+				</li>
+				<div class="simple_table_wrapper">
+				
+				</div>
+				<li class="s_main_text">
+					<!-- 서비스 전체 보기 : 서비스 리스트 --> 
+					<ul>
+						<li class="service_item service_pc_sec_ok ">
+							<div class="service_item_img"></div>
+							<span class="font_bold">통합PC보안</span>
+							<button class=" btn_small btncolor_white" onclick="location.href='/pc/dashboard';" type="submit"><span>바로가기</span></button>
+						</li><!--
+					 --><li class="service_item service_print_ok ">
+							<div class="service_item_img"></div>
+							<span class="font_bold">출력물보안</span>
+							<button class=" btn_small btncolor_white" onclick="location.href='/print/dashboard';" type="submit"><span>바로가기</span></button>
+						</li>
+					</ul>
+					<!-- //서비스 전체 보기 : 서비스 리스트 --> 
+
+				</li>
+				<li class="s_add_text font_bold">
+					<!-- 추가문구가 안 들어갈 경우 밑의 h4 태그를 지워주세요 -->
+					<!--
+					<h4>삭제 전 반드시 암호화 파일의 존재여부를 확인하시기 바랍니다.</h4>
+					-->
+				</li>
+			</ul>
+		</li>
+		<li class="alert_bottom">
+			<div class="btn_wrapper">
+				<button class="ok btn_small btncolor_blue_no_sdw" type="submit">닫기</button>
+			</div>
+		</li>
+	</ul>	
+</div>
+<!-- //알림메시지 : 서비스 전체 모아보기 -->
+				
+				</div>
+				<!-- //contents -->
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //wrapper -->
+	
+
+</div></body></html>

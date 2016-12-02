@@ -1,0 +1,48 @@
+@font-face {
+	font-family:"nanum"
+	src:local('./NanumGothic.ttf') format("truetype");
+	   
+}
+@font-face {
+	font-family:"gungser"
+	src:local('./±Ã¼­Ã¼.ttf') format("truetype");
+	   
+}
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+body { font-family:gungser; }
+h1 {
+  color:#ccc;
+}
+table tr td{
+    text-align:center;
+    border:1px solid gray;
+    padding:4px;
+}
+table tr th{
+text-align:center;
+    font-family:nanum;
+    background-color:#84C7FD;
+    color:#fff;
+    width: 100px;
+}
+.itext{
+    color:#84C7FD;
+    font-weight:bold;
+}
+.description{
+    color:gray;
+}
+.ListTable tr td{
+    text-align:center;
+    border:1px solid gray;
+    padding:3px;
+}
+.ListTable tr th{
+    font-family:gungser;
+    background-color:#24C7FD;
+    color:#ff4;
+    width: 100px;
+}
